@@ -11,7 +11,7 @@ Then we chose the column that the histogram will be calculated for:
 Then we set the columns to group by:  
 ```plotColumns=['day', 'sex', 'smoker']```
 
-Then we create a list of the number of traces (one for each unique column value) for each grouped column:  
+Then we create a list of the number of traces (one for each unique column value) for each grouped column. For example, there are 4 days of the week in the "day" variable so there would be 4 overlaid histogram traces when grouping by "day".
 ```
 numTraces=[]
 for col in plotColumns:
@@ -60,3 +60,4 @@ fig.update_xaxes(title=str(metric))
 
 Save the interactive visual offline:  
 ```fig.write_html("demowidget.html")```
+![newplot](https://github.com/lforeman2/plotlyDropDownMenu/assets/67378204/9936099a-56f3-41f1-8dc7-6f23fbe70153)
